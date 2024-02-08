@@ -1,0 +1,111 @@
+<!--author: brigid oreilly-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cheesecake Order Form</title>
+    <link rel="stylesheet" type="text/css" href="cheesecake.css"/>
+    <script
+    src=""https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
+    </script>
+</head>
+
+    <body>
+        <h1>Cheesecake Order Form</h1>
+        <img src="chzcakr.png" alt="cheesecake" width="200" height=200"">
+        <div id = "tired"><p>Quantity Topping</p></div>
+        <div style="display:table" id="later">
+            <div style="display:table-row">
+                <div style="display:table-cell">
+                    <div>
+                        <!--dropdown-->
+                        <select name="topping" id="topping">
+                            <option value="one">one</option>
+                            <option value="two">two</option>
+                            <option value="three">three</option>
+                            <option value="four">four</option>
+                            <option value="five">five</option>
+                        </select>  
+                    </div>
+                </div>
+                <div style="display:table-cell">
+                    <!--radio button-->
+                    <div>
+                        <input type="radio" id="plain" name="topping" value="plain">
+                        <label for "plain">plain</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="cherry" name="topping" value="cherry">
+                        <label for "cherry">cherry</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="chocolate" name="topping" value="chocolate">
+                        <label for "chocolate">chocolate</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = "txt">
+            <p>Notes:</p>
+            <textarea id="notes" name="notes" rows="5" cols="50">Enter any special instructions here.</textarea><br>
+        
+        <!--<input type="text" id="notes" name="notes" size="50" placeholder="Enter any special instructions here." height="50"><br>-->
+            <form action="" id="submit">
+                <button type="submit">Order</button>
+            </form>
+        </div>
+        <!--<div><input type="submit" value="Order" id="submit"></div>-->
+        <!--source: https://www.w3schools.com/howto/howto_css_dropdown.asp-->
+        <div style="display:table-row">
+            <div style="display:table-cell">
+                <p><b>Total Orders for </b></p>
+            </div>
+            <div style="display:table-cell">
+                <div class = "dropdown">
+                    <button
+                    class="dropbtn">Month Selection</button>
+                        <div class = "opt">
+                            <a href="#" value="Jan">Jan</a>
+                            <a href="#" value="Feb">Feb</a>
+                            <a href="#" value="Mar">Mar</a>
+                            <a href="#" value="Apr">Apr</a>
+                            <a href="#" value="May">May</a>
+                            <a href="#" value="Jun">Jun</a>
+                            <a href="#" value="Jul">Jul</a>
+                            <a href="#" value="Aug">Aug</a>
+                            <a href="#" value="Sep">Sep</a>
+                            <a href="#" value="Oct">Oct</a>
+                            <a href="#" value="Nov">Nov</a>
+                            <a href="#" value="Dec">Dec</a>
+                        </div>
+                    </div>
+                </div>
+            <!--
+                <div class="dropdown">
+                    <button
+                    class="dropbtn" onclick="clickFunct()">Jan</button>
+                    <div class="dropdown-content">
+                        <a href ="#">Feb</a>
+                        <a href ="#">Mar</a>  
+                        <a href ="#">Apr</a>
+                        <a href ="#">May</a> 
+                        <a href ="#">Jun</a>
+                        <a href ="#">Jul</a>  
+                        <a href ="#">Aug</a>
+                        <a href ="#">Sept</a>  
+                        <a href ="#">Oct</a>
+                        <a href ="#">Nov</a> 
+                        <a href ="#">Dec</a>
+                    </div>
+                </div>
+            -->
+            </div>
+        </div>
+        <ul>
+            <li>11 cherry</li>
+            <li>17 chocolate</li>
+            <li>31 plain</li>
+        </ul>
+        <script src="javascripts/stuff.js"></script>
+            
+    </body>
+</html>

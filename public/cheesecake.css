@@ -1,0 +1,51 @@
+/*author: brigid oreilly*/
+
+body {
+    background-color: azure;
+}
+
+h1 {
+    color:rebeccapurple;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    color:brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.dropbtn {
+    background-color: powderblue;
+    color: black;
+    padding: 16px;
+    font-size: 14px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.opt {
+    display: none;
+    position: absolute;
+    background-color: antiquewhite;
+    min-width: 100px;
+}
+.opt a {
+    color: black;
+    display: block;
+}
+
+.opt a:hover{
+    background-color: blanchedalmond;
+}
+
+.dropdown:hover .opt {
+    display: block;
+}
